@@ -1,0 +1,14 @@
+body{
+  background-color: #101820FF;
+}
+
+h1{
+  color: #F3055C;
+  font-family: impact;
+  font-size: 300%;
+  text-align: center;
+
+}
+pre{
+  border: 2px solid powderblue;
+}
