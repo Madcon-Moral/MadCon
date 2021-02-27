@@ -4,6 +4,23 @@
 <html lang="en" dir="ltr">
 
   <head>
+    
+    <script>
+    function httpGetAsync(url, callback) {
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.onreadystatechange = function() {
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+          callback(xmlHttp.responseText);
+      }
+      xmlHttp.open("GET", url, true);
+      xmlHttp.send(null);
+    }
+
+    var url = "https://ipgeolocation.abstractapi.com/v1/?api_key=270ace9ba80e47a88181496fb4919b6c&ip_address=203.87.133.163"
+
+    httpGetAsync(url)
+
+    </script>
 <style>
 
 body{
